@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/womb-website/static/css/main.38520cb6.css",
+    "main.js": "/womb-website/static/js/main.51894ba6.js",
+    "static/js/453.dccd5ade.chunk.js": "/womb-website/static/js/453.dccd5ade.chunk.js",
+    "static/media/inter-latin-ext-wght-normal.woff2": "/womb-website/static/media/inter-latin-ext-wght-normal.8bff79fbfaa8b8167a0b.woff2",
+    "static/media/inter-latin-wght-normal.woff2": "/womb-website/static/media/inter-latin-wght-normal.4f2981d82860061bca3e.woff2",
+    "static/media/logo.png": "/womb-website/static/media/logo.93df9cc4ad75f127bbac.png",
+    "static/media/inter-cyrillic-ext-wght-normal.woff2": "/womb-website/static/media/inter-cyrillic-ext-wght-normal.e5b004735aeeefff3826.woff2",
+    "static/media/inter-greek-wght-normal.woff2": "/womb-website/static/media/inter-greek-wght-normal.e322bb327758c5fc4be5.woff2",
+    "static/media/inter-cyrillic-wght-normal.woff2": "/womb-website/static/media/inter-cyrillic-wght-normal.2008fa337b88a5ae6346.woff2",
+    "static/media/inter-greek-ext-wght-normal.woff2": "/womb-website/static/media/inter-greek-ext-wght-normal.5e7efe2c7d99bb0c4a3b.woff2",
+    "static/media/inter-vietnamese-wght-normal.woff2": "/womb-website/static/media/inter-vietnamese-wght-normal.ab4bb8dcda024fe6eff2.woff2",
+    "index.html": "/womb-website/index.html",
+    "main.38520cb6.css.map": "/womb-website/static/css/main.38520cb6.css.map",
+    "main.51894ba6.js.map": "/womb-website/static/js/main.51894ba6.js.map",
+    "453.dccd5ade.chunk.js.map": "/womb-website/static/js/453.dccd5ade.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38520cb6.css",
+    "static/js/main.51894ba6.js"
+  ]
+}
