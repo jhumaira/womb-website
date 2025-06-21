@@ -8,6 +8,7 @@ import BecomeDoulaPage from './pages/BecomeDoulaPage';
 import BirthVideosAndPhotos from './pages/BirthVideosAndPhotos';
 import { CoursesPage, CourseDetail } from './pages/CoursesPage';
 import FAQPage from './pages/FAQPage';
+import GlobalMedia from './pages/GlobalMedia';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -108,8 +109,11 @@ function App() {
                     </Link>
 
                     <div className="card">
-                      <img src="https://img.icons8.com/?size=100&id=18260&format=png&color=000000" alt="Globe Icon" />
-                      <a href="/media-links.pdf" target="_blank" rel="noopener noreferrer">
+                    <Link to="/global-media" className="card">
+                        <img src="https://img.icons8.com/?size=100&id=18260&format=png&color=000000" alt="Globe Icon" />
+                        <h3>Global Health Media Links</h3>
+                      </Link>
+
                         <h3>Global Health Media Links</h3>
                       </a>
                     </div>
@@ -183,6 +187,7 @@ function App() {
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/become-a-doula" element={<BecomeDoulaPage />} />
         <Route path="/birthvideos" element={<BirthVideosAndPhotos />} />
+        <Route path="/global-media" element={<GlobalMedia />} />
       </Routes>
     </Router>
   );
