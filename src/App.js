@@ -108,15 +108,11 @@ function App() {
                       <h3>AMANI Curriculum Materials</h3>
                     </Link>
 
-                    <div className="card">
                     <Link to="/global-media" className="card">
-                        <img src="https://img.icons8.com/?size=100&id=18260&format=png&color=000000" alt="Globe Icon" />
-                        <h3>Global Health Media Links</h3>
-                      </Link>
+  <img src="https://img.icons8.com/?size=100&id=18260&format=png&color=000000" alt="Globe Icon" />
+  <h3>Global Health Media Links</h3>
+</Link>
 
-                        <h3>Global Health Media Links</h3>
-                      </a>
-                    </div>
 
                     <div className="card">
                       <img src="https://img.icons8.com/?size=100&id=_Gk0DsQnOUpt&format=png&color=000000" alt="Education Icon" />
