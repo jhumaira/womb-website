@@ -9,6 +9,8 @@ import BirthVideosAndPhotos from './pages/BirthVideosAndPhotos';
 import { CoursesPage, CourseDetail } from './pages/CoursesPage';
 import FAQPage from './pages/FAQPage';
 import GlobalMedia from './pages/GlobalMedia';
+import DhikrCards from './pages/DhikrCards';
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -127,12 +129,11 @@ function App() {
                     </Link>
 
 
-                    <div className="card">
+                    <Link to="/dhikr-cards" className="card">
                       <img src="https://img.icons8.com/?size=100&id=nDswYGvqncqF&format=png&color=000000" alt="Affirmation Icon" />
-                      <a href="/affirmations.html" target="_blank" rel="noopener noreferrer">
-                        <h3>Dhikr Cards & Birth Affirmations</h3>
-                      </a>
-                    </div>
+                      <h3>Dhikr Cards & Birth Affirmations</h3>
+                    </Link>
+
 
                     <Link to="/faq" className="card">
                       <img src="https://img.icons8.com/?size=100&id=103642&format=png&color=000000" alt="Answers Icon" />
@@ -184,6 +185,7 @@ function App() {
         <Route path="/become-a-doula" element={<BecomeDoulaPage />} />
         <Route path="/birthvideos" element={<BirthVideosAndPhotos />} />
         <Route path="/global-media" element={<GlobalMedia />} />
+        <Route path="/dhikr-cards" element={<DhikrCards />} />
       </Routes>
     </Router>
   );
