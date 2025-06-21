@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+/* App.css */
+
+:root {
+  --color-primary: #2e7d32; /* Deep green */
+  --color-secondary: #66bb6a; /* Lighter green */
+  --color-accent: #e8f5e9; /* Soft green background */
+  --color-muted: #f1f8f4; /* Very light greenish gray */
+  --color-dark: #1b5e20;
+  --color-text: #2f3e4d;
+  --color-white: #ffffff;
+
+  --font-sans: 'InterVariable', sans-serif;
+
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --transition: all 0.4s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-muted);
+  color: var(--color-text);
+  line-height: 1.6;
+  transition: var(--transition);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: var(--transition);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: var(--color-white);
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: var(--transition);
+}
+
+.navbar .container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  transition: var(--transition);
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.logo img {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  transition: var(--transition);
+}
+
+.nav-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links .cta {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: background 0.3s ease;
+}
+
+.nav-links .cta:hover {
+  background-color: var(--color-secondary);
+}
+
+.hero {
+  background: linear-gradient(to right, var(--color-accent), var(--color-white));
+  text-align: center;
+  padding: 80px 20px;
+  transition: var(--transition);
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  transition: var(--transition);
+}
+
+.hero-buttons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+button.primary,
+button.secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button.primary {
+  background-color: var(--color-primary);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button.secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.secondary:hover {
+  background-color: var(--color-accent);
+}
+
+.services-section {
+  background-color: var(--color-white);
+  padding: 60px 0;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  transition: var(--transition);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.card {
+  background-color: var(--color-accent);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  width: 280px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.contact-section {
+  background-color: var(--color-muted);
+  padding: 60px 20px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+}
+
+.contact-section p {
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-inline: auto;
+  transition: var(--transition);
+}
+
+.contact-form {
+  background-color: var(--color-white);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  margin: 0 auto;
+  transition: var(--transition);
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  transition: var(--transition);
+  font-family: var(--font-sans);
+  text-align: left;
+  align-items: left;
+}
+
+.contact-form label {
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 5px;
+  font-size: 1rem;
+  transition: var(--transition);
+  font-family: var(--font-sans);
+  text-align: left;
+}
+
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  background-color: #fff;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  font-family: var(--font-sans);
+  width: 100%;
+}
+
+.contact-form textarea:focus,
+.contact-form input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  background-color: #fefefe;
+}
+
+.contact-form button {
+  padding: 14px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-sans);
+}
+
+.contact-form button:hover {
+  background-color: var(--color-secondary);
+}
+
+.footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  font-family: var(--font-sans);
 }

@@ -1,3 +1,4 @@
+import './index.css'; // or tailwind.css if you're using that
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
